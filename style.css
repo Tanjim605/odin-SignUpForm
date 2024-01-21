@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Norse;
+    src: url(assets/font/Norse-Bold.otf);
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.whole-section {
+    display: flex;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.image-section {
+    width: 80%;
+    overflow: hidden;
+    height: 100vh;
+}
+.image-section img {
+    /* width: 80%; */
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+.write-section {
+    margin: 100px 30px;
+}
+
+.head p {
+    line-height: 30px;
+    margin: 25px 0px;
+}
+
+label {
+    color: #585858;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+}
+
+legend {
+    color: #242424;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:invalid {
+    outline: none;
+    border: 2px solid rgb(250, 135, 135);
+    border-radius: 3px;
+}
+
+input:valid {
+    outline: none;
+    border: 2px solid rgb(87, 163, 101);
+    /* border-radius: 3px; */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid lightskyblue;
+    border-radius: 3px;
+}
+
+::placeholder {
+    font-size: 14px;
+    padding: 0px 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-section {
+    padding: 15px 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: rgb(75, 126, 41);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: rgb(75, 126, 41);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .whole-section{
+        flex-direction: column;
+        
+    }
+    fieldset {
+        justify-content: center;
+    }
+    .image-section{
+        width: 100%;
+        height: 20%;
+    }
+    .image-section img{
+        width: 100vw;
+        height: 20%;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+}
